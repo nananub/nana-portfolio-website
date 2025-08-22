@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escape – Self portrait movie</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="m-header">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="m-drawer">
+      <img src="assets/images/Home-icon.png" alt="Menu" />
+    </button>
+    <a class="home-btn" href="./index.html" aria-label="Home">
+      <img src="assets/images/Home-icon.png" alt="" />
+    </a>
+    <nav class="nav-inline" aria-label="Primary">
+      <a href="./about.html">About</a>
+      <a href="./artworks.html">Artworks</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- Drawer mobile -->
+  <nav id="m-drawer" class="m-drawer" data-open="false">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="artworks.html">Artworks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+
+  <main class="aw-scene">
+    <section class="aw-wrap">
+      <h1 class="aw-title">Escape - Self portrait movie</h1>
+
+
+      <!-- Hero image -->
+      <figure class="aw-hero">
+        <img src="assets/images/aw4.png" alt="Escape - Self portrait movie cover">
+      </figure>
+
+
+      <!-- About -->
+      <h2 class="aw-subtitle">about the project</h2>
+      <p class="aw-desc">
+        "Escape" is a short self-portrait film that explores themes of illusion, fragmentation, and
+        self-reflection through the use of three carefully composed camera shots. Employing blurriness,
+        overlays, and experimental effects, the work creates a visual language of disorientation that
+        symbolizes the sensation of an “escaping” inner self. Beneath its abstract imagery lies a metaphorical
+        narrative on self-awareness, with each scene serving as a reflection of internal struggles and the search
+        for identity. Through its interplay of visual distortion and symbolic composition, the film presents a
+        meditation on self-perception, inviting viewers to engage with the complexities of self-reflection and
+        the elusive nature of personal identity.
+      </p>
+
+
+      <!-- Meta (2 cột) -->
+      <section class="aw-meta">
+        <dl>
+          <dt>year created:</dt>   <dd>2024</dd>
+          <dt>collaborators:</dt>  <dd>none</dd>
+          <dt>project type:</dt>   <dd>digital video, short movie</dd>
+          <dt>duration:</dt>       <dd>4 weeks</dd>
+          <dt>role:</dt>           <dd>actress, director, editor</dd>
+          <dt>tools:</dt>          <dd>Canon, DaVinci</dd>
+        </dl>
+      </section>
+
+
+         <section class="aw-video aw-video-link">
+        <video class="aw-player" playsinline preload="metadata" poster="assets/images/aw4.png">
+          
+          <source src="assets/images/aw4.png" type="video/quicktime">
+        </video>
+        <a class="aw-video-hit"
+           href="https://youtu.be/vxXs4Xycpg8"
+           target="_blank" rel="noopener noreferrer">
+          <span class="sr-only">Watch on YouTube</span>
+        </a>
+      </section>
+    </section>
+  </main>
+
+
+  <div id="loading-screen" class="hidden">
+    <img src="assets/images/loading-icon.gif" alt="Loading...">
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+

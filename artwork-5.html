@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tam's Untold Story</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="m-header">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="m-drawer">
+      <img src="assets/images/Home-icon.png" alt="Menu" />
+    </button>
+    <a class="home-btn" href="./index.html" aria-label="Home">
+      <img src="assets/images/Home-icon.png" alt="" />
+    </a>
+    <nav class="nav-inline" aria-label="Primary">
+      <a href="./about.html">About</a>
+      <a href="./artworks.html">Artworks</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Drawer mobile -->
+  <nav id="m-drawer" class="m-drawer" data-open="false">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="artworks.html">Artworks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="aw-scene">
+    <section class="aw-wrap">
+      <h1 class="aw-title">Tam's Untold Story</h1>
+
+      <!-- Hero image -->
+      <figure class="aw-hero">
+        <img src="assets/images/aw5.png" alt="Tam's Untold Story cover">
+      </figure>
+
+      <!-- About -->
+      <h2 class="aw-subtitle">about the project</h2>
+      <p class="aw-desc">
+        “Tam's Untold Story” is a project that involves the design of a digital infographic for Dove Body Scrubs,
+        presented through a narrative format. The concept draws inspiration from the Vietnamese fairytale Tam Cam,
+        reimagined within the cultural and historical context of nineteenth- and early twentieth-century Vietnam during
+        the Nguyen Dynasty. The scenario serves as a continuation of the original tale, depicting Tam as Queen alongside
+        the King. Over time, however, the King introduces additional concubines into the palace, leaving Tam isolated and
+        distressed. At this point, the Fairy Godfather intervenes, presenting Tam with a Dove bird as a symbol of comfort
+        and salvation. The narrative integrates elements of Vietnamese heritage, including traditional architecture, attire,
+        and cultural motifs, while the color palette and graphic style have been adapted to reflect the historical setting
+        and thematic direction of the work.
+      </p>
+
+      
+      <section class="aw-meta">
+        <dl>
+          <dt>year created:</dt>   <dd>2024</dd>
+          <dt>collaborators:</dt>  <dd>Unilever</dd>
+          <dt>project type:</dt>   <dd>website design</dd>
+          <dt>duration:</dt>       <dd>4 weeks</dd>
+          <dt>role:</dt>           <dd>designer</dd>
+          <dt>tools:</dt>          <dd>Adobe Illustrator, Figma</dd>
+        </dl>
+      </section>
+
+      
+      <section class="aw-video aw-video-link">
+        <video class="aw-player" playsinline preload="metadata" poster="assets/images/aw5.png">
+          <source src="assets/images/aw5.png" type="video/mp4">
+        </video>
+        <a class="aw-video-hit"
+           href="https://youtu.be/DYVNzkrt7cs"
+           target="_blank" rel="noopener noreferrer">
+          <span class="sr-only">Watch on YouTube</span>
+        </a>
+      </section>
+    </section>
+  </main>
+
+  <div id="loading-screen" class="hidden">
+    <img src="assets/images/loading-icon.gif" alt="Loading...">
+  </div>
+
+  <audio id="click-audio" src="assets/sound/click.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>

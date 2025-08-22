@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nana's Portfolio</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+  <header class="m-header">
+  <!-- === Mobile: hamburger; Tablet/Desktop: hidden === -->
+  <button class="nav-toggle" aria-expanded="false" aria-controls="m-drawer">
+    <img src="assets/images/Home-icon.png" alt="Menu" />
+  </button>
+
+  <!-- === Tablet/Desktop: Home, Mobile: hidden === -->
+  <a class="home-btn" href="./index.html" aria-label="Home">
+    <img src="assets/images/Home-icon.png" alt="" />
+  </a>
+
+  <!-- === Tablet/Desktop: nav inline === -->
+  <nav class="nav-inline" aria-label="Primary">
+    <a href="./about.html">About</a>
+    <a href="./artworks.html">Artworks</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+</header>
+
+  <!-- === Nav drawer === -->
+  <nav id="m-drawer" class="m-drawer" data-open="false">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="artworks.html">Artworks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="scene">
+    <video class="bg-video" src="assets/images/clouds-bg.mp4"
+           autoplay muted loop playsinline preload="auto"
+           poster="assets/images/Homepage-1.png"></video>
+
+    <img id="house-frame" class="house-frame" src="assets/images/Homepage-1.png"
+         alt="House Animation" />
+  </main>
+
+  <div id="loading-screen">
+  <img src="assets/images/loading-icon.gif" alt="Loading..." />
+</div>
+
+  <audio id="click-audio" src="assets/sound/click.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>

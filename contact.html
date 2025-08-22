@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Nana</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+  <header class="m-header">
+
+  <button class="nav-toggle" aria-expanded="false" aria-controls="m-drawer">
+    <img src="assets/images/Home-icon.png" alt="Menu" />
+  </button>
+
+  <a class="home-btn" href="./index.html" aria-label="Home">
+    <img src="assets/images/Home-icon.png" alt="" />
+  </a>
+
+  <nav class="nav-inline" aria-label="Primary">
+    <a href="./about.html">About</a>
+    <a href="./artworks.html">Artworks</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+</header>
+
+  <nav id="m-drawer" class="m-drawer" data-open="false">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="artworks.html">Artworks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- === Contact scene === -->
+  <main class="contact-scene">
+    <!-- === Contact board === -->
+    <div class="contact-board">
+      <img class="contact-img" src="assets/images/Contact.png" alt="Contact board"/>
+
+      <div class="contact-grid">
+  <a class="citem" href="https://mail.google.com/mail/?view=cm&to=nananguyen1765@gmail.com" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/Gmail.png" alt="Gmail"/>
+    <span>Gmail</span>
+  </a>
+
+  <a class="citem" href="https://www.facebook.com/nanaltheaesthete/?locale=vi_VN" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/Facebook.png" alt="Facebook"/>
+    <span>Facebook</span>
+  </a>
+
+  <a class="citem" href="https://www.instagram.com/na.lthea_/" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/Instagram.png" alt="Instagram"/>
+    <span>Instagram</span>
+  </a>
+
+  <a class="citem" href="https://www.linkedin.com/in/nana-nguyen-59396b25a/" target="_blank" rel="noopener noreferrer">
+    <img src="assets/images/Linkedin.png" alt="LinkedIn"/>
+    <span>LinkedIn</span>
+  </a>
+</div>
+
+  </main>
+
+  <div id="loading-screen" class="hidden">
+    <img src="assets/images/loading-icon.gif" alt="Loading...">
+  </div>
+
+ <audio id="click-audio" src="assets/sound/click.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>

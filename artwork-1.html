@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eternity</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+ 
+  <header class="m-header">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="m-drawer">
+      <img src="assets/images/Home-icon.png" alt="Menu" />
+    </button>
+    <a class="home-btn" href="./index.html" aria-label="Home">
+      <img src="assets/images/Home-icon.png" alt="" />
+    </a>
+    <nav class="nav-inline" aria-label="Primary">
+      <a href="./about.html">About</a>
+      <a href="./artworks.html">Artworks</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Drawer mobile -->
+  <nav id="m-drawer" class="m-drawer" data-open="false">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="artworks.html">Artworks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="aw-scene">
+    <section class="aw-wrap">
+      <h1 class="aw-title">Eternity</h1>
+
+      <!-- Hero image -->
+      <figure class="aw-hero">
+        <img src="assets/images/aw1.png" alt="Eternity cover">
+      </figure>
+
+      <!-- About -->
+      <h2 class="aw-subtitle">about the project</h2>
+      <p class="aw-desc">
+        “Eternity” is an audio-visual game trailer project with a primary focus on sound design,
+        crafted to immerse viewers in its suspense-driven narrative. The game follows Jay, a local
+        detective, as he investigates the mysterious disappearance of a close friend. The case is
+        commissioned by another childhood companion, whose own perspective on the events may conceal
+        deeper motives. As the investigation unfolds, Jay is drawn into a labyrinth of hidden truths,
+        gradually uncovering a chilling and deceptive past that has shadowed him all his life.
+        Through atmospheric soundscapes, layered audio cues, and precise timing, the trailer heightens
+        tension and amplifies the emotional weight of each scene, allowing the audience to feel the
+        unease, urgency, and revelations alongside the protagonist.
+      </p>
+
+    
+      <section class="aw-meta">
+        <dl>
+          <dt>year created:</dt> <dd>2024</dd>
+          <dt>collaborators:</dt> <dd>none</dd>
+          <dt>project type:</dt> <dd>sound design, digital video</dd>
+          <dt>duration:</dt> <dd>3 weeks</dd>
+          <dt>role:</dt> <dd>editor, sound designer</dd>
+          <dt>tools:</dt> <dd>DaVinci, Audacity</dd>
+        </dl>
+      </section>
+
+      <!-- Video -->
+      <section class="aw-video aw-video-link">
+  
+  <video class="aw-player" playsinline preload="metadata" poster="assets/images/aw1.png"></video>
+
+
+  <a class="aw-video-hit"
+     href="https://youtu.be/C9sFsCMmKGs"
+     target="_blank" rel="noopener noreferrer">
+    <span class="sr-only">Watch on YouTube</span>
+  </a>
+</section>
+
+    </section>
+  </main>
+
+  <div id="loading-screen" class="hidden">
+    <img src="assets/images/loading-icon.gif" alt="Loading...">
+  </div>
+  
+ <audio id="click-audio" src="assets/sound/click.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>

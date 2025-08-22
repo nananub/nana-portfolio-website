@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artworks Nana</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+  <header class="m-header">
+  <!-- Mobile: hamburger -->
+  <button class="nav-toggle" aria-expanded="false" aria-controls="m-drawer">
+    <img src="assets/images/Home-icon.png" alt="Menu" />
+  </button>
+
+  <!-- Tablet/Desktop -->
+  <a class="home-btn" href="./index.html" aria-label="Home">
+    <img src="assets/images/Home-icon.png" alt="" />
+  </a>
+
+  <!-- Tablet/Desktop: nav inline -->
+  <nav class="nav-inline" aria-label="Primary">
+    <a href="./about.html">About</a>
+    <a href="./artworks.html">Artworks</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+</header>
+
+  <!-- Nav drawer -->
+  <nav id="m-drawer" class="m-drawer" data-open="false">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="artworks.html">Artworks</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="artworks-scene">
+    <section class="container stack art-intro">
+      <h1 class="art-title">Explore my WORKS!</h1>
+      <p class="art-sub">
+        Here are some of the projects that I have worked on while studying Digital Media at RMIT.
+      </p>
+    </section>
+
+    <section class="container art-grid">
+      <!-- 1 -->
+      <article class="art-card">
+        <div class="thumb"><img src="assets/images/aw1.png" alt="Eternity"></div>
+        <a class="art-name" href="./artwork-1.html">Eternity</a>
+        <div class="art-tag">#sound_design_2024</div>
+      </article>
+      <!-- 2 -->
+      <article class="art-card">
+        <div class="thumb"><img src="assets/images/aw2.png" alt="Flavors of Home"></div>
+        <a class="art-name" href="./artwork-2.html">Flavors of Home</a>
+        <div class="art-tag">#digital_narrative_2025</div>
+      </article>
+      <!-- 3 -->
+      <article class="art-card">
+        <div class="thumb"><img src="assets/images/aw3.png" alt="The Concert of Avian Music"></div>
+        <a class="art-name" href="./artwork-3.html">The Concert of Avian Music</a>
+        <div class="art-tag">#festival_web_design_2024</div>
+      </article>
+      <!-- 4 -->
+      <article class="art-card">
+        <div class="thumb"><img src="assets/images/aw4.png" alt="Escape"></div>
+        <a class="art-name" href="./artwork-4.html">Escape</a>
+        <div class="art-tag">#self_portrait_movie_2024</div>
+      </article>
+      <!-- 5 -->
+      <article class="art-card">
+        <div class="thumb"><img src="assets/images/aw5.png" alt="Tam's Untold Story"></div>
+        <a class="art-name" href="./artwork-5.html">Tam's Untold Story</a>
+        <div class="art-tag">#interactive_web_design_2024</div>
+      </article>
+      <!-- 6 -->
+      <article class="art-card">
+        <div class="thumb"><img src="assets/images/aw6.jpg" alt="Fetters of Reflective Petals"></div>
+        <a class="art-name" href="./artwork-6.html">Fetters of Reflective Petals</a>
+        <div class="art-tag">#digital_image_2024</div>
+      </article>
+    </section>
+  </main>
+
+  <div id="loading-screen" class="hidden">
+    <img src="assets/images/loading-icon.gif" alt="Loading...">
+  </div>
+
+  <audio id="click-audio" src="assets/sound/click.mp3" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>
