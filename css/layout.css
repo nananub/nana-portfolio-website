@@ -103,7 +103,18 @@
   }
 }
 
+@media (min-width: 1440px){
 
+  .house-frame{
+    left: 50%;
+    bottom: var(--house-bottom);
+    top: 30%;                          
+    transform: translateX(-50%) scale(var(--house-scale));
+    width: 100%;                        
+    height: auto;
+    max-width: 100%;
+  }
+}
 
 #loading-screen{
   position:fixed;

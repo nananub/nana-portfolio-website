@@ -174,9 +174,18 @@
 @media (min-width:768px){
   .artworks-scene,
   .contact-scene{
-    --r: 2px;
-    --cell: 22px;
+    --r: 1.6px;
+    --cell: 18px;
   }
+}
+
+.contact-board{
+  position:relative;
+  width:min(30vw, 500px);
+  animation:wiggle 3.8s ease-in-out infinite;
+}
+.contact-img{
+  display:block; width:100%; height:auto;
 }
 
 /* Desktop */
@@ -310,8 +319,23 @@
 
 
 @media (min-width:640px){
-  .contact-grid{ left:14%; right:14%; top:24%; bottom:10%; gap:16px; }
-  .citem img{ width:30px; }
+  .contact-board{ width:min(70vw, 530px); top: 5%; }
+  .citem{
+  width:100%;
+  display:grid;
+  grid-template-rows: 84px auto;   
+  justify-items:center;
+  align-items:start;
+  gap:30px;
+  text-align:center;
+  text-decoration:none;
+  color:#2e2419;
+  font-size:20px;
+  line-height:2.5;
+  cursor:pointer;
+  transition:transform .15s ease;
+}
+  .citem img{ width:auto; height: 100px; }
 }
 
 
